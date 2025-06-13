@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json.schemastore.org/package.json",
+    "name": "@sodiumlabs/gdapi",
+    "version": "1.0.0",
+    "description": "An unofficial Geometry Dash API wrapper",
+    "license": "MIT",
+    "author": "SodiumLabs",
+    "scripts": {
+        "build": "tsc --noEmit && tsup",
+        "lint": "tsc --noEmit && prettier . --check",
+        "format": "prettier . --write"
+    },
+    "exports": {
+        "require": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        },
+        "import": {
+            "types": "./dist/index.d.mts",
+            "default": "./dist/index.mjs"
+        }
+    },
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "keywords": [
+        "api",
+        "gd",
+        "geometry",
+        "dash",
+        "wrapper",
+        "sodium",
+        "sodiumlabs"
+    ],
+    "homepage": "https://github.com/sodium-labs/gdapi#readme",
+    "bugs": {
+        "url": "https://github.com/sodium-labs/gdapi/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sodium-labs/gdapi.git"
+    },
+    "devDependencies": {
+        "@types/node": "^24.0.1",
+        "prettier": "^3.5.3",
+        "tsup": "^8.5.0",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "zod": "^3.25.63"
+    }
+}
