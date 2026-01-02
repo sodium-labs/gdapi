@@ -97,11 +97,12 @@ export class GDAPI {
 
     /**
      * @example
-     * ```
+     * ```ts
      * searchLevels({
      *    type: SearchLevelsType.Query,
      *    query: "bloodbath"
      * });
+     * ```
      */
     public async searchLevels(options: SearchLevelsOptions): Promise<LevelsData> {
         const requestOptions: Record<string, string> = {
@@ -153,11 +154,12 @@ export class GDAPI {
 
     /**
      * @example
-     * ```
+     * ```ts
      * searchLists({
      *    type: SearchListType.Query,
      *    query: "Name"
      * });
+     * ```
      */
     public async searchLists(options: SearchListsOptions): Promise<ListsData> {
         const requestOptions: Record<string, string> = {
@@ -194,7 +196,7 @@ export class GDAPI {
     }
 
     /**
-     * @param page Starts at 0
+     * @param page - Starts at 0
      */
     public async getMapPacks(page = 0): Promise<MapPacksData> {
         const data = await this.rest.post("/database/getGJMapPacks21.php", {

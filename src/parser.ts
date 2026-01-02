@@ -88,7 +88,7 @@ export const parseTuple = <T extends z.AnyZodTuple>(data: string, schema: T): z.
 
 /**
  * Parse a GD groups in the format `data#data#data`
- * @param count The expected group count
+ * @param count - The expected group count
  */
 export const parseGroups = (data: string, count: number): string[] => {
     const groups = data.split("#");

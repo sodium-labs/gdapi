@@ -2,14 +2,15 @@ import { APIError } from "./APIError";
 import { BOOMLINGS_URL } from "./constants";
 
 /**
- * Use to interact with Geometry Dash API
+ * Use to interact with the Geometry Dash API.
  *
  * @see https://wyliemaster.github.io/gddocs/#/endpoints/generic
  */
 export class REST {
     /**
-     * @throws {APIError} if the request fail
-     * @param path Must start with `/`
+     * Throws {@link APIError} if the request fail
+     * 
+     * @param path - Must start with `/`
      */
     public async request(method: string, path: string, body?: Record<string, string>): Promise<Response> {
         if (!path.startsWith("/")) {

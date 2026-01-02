@@ -1,4 +1,8 @@
-export { version } from "@/../package.json";
+/**
+ * @deprecated The version will not be exported in the next major version.
+ */
+export const version = "0.0.0";
+
 export * from "./resources/gauntlets";
 export * from "./resources/levels";
 export * from "./resources/lists";
