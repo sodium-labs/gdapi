@@ -12,7 +12,7 @@
 
 # About
 
-GD API is a module that allows you to easily interact with the Geometry Dash private API. The module documentation is available at [https://docs.sodiumlabs.xyz](https://docs.sodiumlabs.xyz/docs/packages/gdapi).
+GD API is a module that allows you to easily interact with the Geometry Dash private API. The module documentation is available at [https://docs.sodiumlabs.xyz](https://docs.sodiumlabs.xyz/docs/packages/gdapi/stable).
 
 This module does not include all features of the Geometry Dash API, such as endpoints that require user passwords. However, you can combine it with the knowledge from the [unofficial GD docs](https://wyliemaster.github.io/gddocs) to access everything if needed.
 
@@ -24,7 +24,7 @@ npm install @sodiumlabs/gdapi@latest
 
 # Links
 
-- [Documentation](https://docs.sodiumlabs.xyz/docs/packages/gdapi)
+- [Documentation](https://docs.sodiumlabs.xyz/docs/packages/gdapi/stable)
 - [Unofficial GD docs](https://wyliemaster.github.io/gddocs)
 - [Discord server](https://discord.gg/8PDXWSHH7k)
 - [GitHub](https://github.com/sodium-labs/gdapi)
